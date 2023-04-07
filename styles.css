@@ -1,10 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root{
     --primary-color: #ea580c;
-    --secondary-color: 
+    --secondary-color: #020617;
 }
+
+body{
+  
+}
+
+#home{
+    height: 200vh;
+}
+
+/*------------------------------------------THIS IS THE NAVIGATION MENU---------------------------------------------------------------*/
+.navMenuContainer{
+   
+}
+.navListItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: .5rem 0 1rem 0;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+.navListItems a{
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: .8rem 2rem;
+    border-radius: 25px;
+    list-style: none;
+    text-decoration: none;
+    transition: ease-out 500ms;
+}
+.navHomePage li, a{
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.navItems{
+    display: flex;
+}
+.navItems .hideMenu{
+    display: none;
+}
+.navItems ul{
+    display: flex;
+    list-style: none;
+}
+.navItems a{
+    text-decoration: none;
+    padding: .8rem 2rem;
+    margin: 0 0 0 .5rem;
+    border-radius: 25px;
+    border: 1.5px solid var(--primary-color);
+    transition: ease-out 500ms;
+}
+.navItems a:hover,
+.navListItems a:hover{
+    background-color: var(--primary-color);
+    transition: ease-in 500ms;
+}
+
+/*--------------------------------------------END OF NAVIGATION MENU--------------------------------------------------------------*/
