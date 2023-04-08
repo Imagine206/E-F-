@@ -73,3 +73,14 @@ body{
 }
 
 /*--------------------------------------------END OF NAVIGATION MENU--------------------------------------------------------------*/
+
+/* this is the start of hero section */
+
+.main-containier{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hero-img{
+    width: 50%;
+}
