@@ -10,6 +10,8 @@
 :root{
     --primary-color: #ea580c;
     --secondary-color: #020617;
+    --padding: .8rem 2rem;
+    --border-radius: 25px;
 }
 
 body{
@@ -35,9 +37,9 @@ body{
 }
 .navListItems a{
     color: white;
-    border: 1px solid var(--primary-color);
-    padding: .8rem 2rem;
-    border-radius: 25px;
+    border: 1.5px solid var(--primary-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
     list-style: none;
     text-decoration: none;
     transition: ease-out 500ms;
@@ -58,18 +60,47 @@ body{
     display: flex;
     list-style: none;
 }
-.navItems a{
+.navItems a,
+.hideMenu{
     text-decoration: none;
-    padding: .8rem 2rem;
+    padding: var(--padding);
     margin: 0 0 0 .5rem;
     border-radius: 25px;
     border: 1.5px solid var(--primary-color);
     transition: ease-out 500ms;
 }
 .navItems a:hover,
-.navListItems a:hover{
+.navListItems a:hover,
+.hideMenu:hover{
     background-color: var(--primary-color);
     transition: ease-in 500ms;
 }
-
+.hideMenu{
+    color: white;
+}
 /*--------------------------------------------END OF NAVIGATION MENU--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------MEDIA QUERY------------------------------------------------*/
+@media (max-width: 750px){
+    .navItems ul{
+        display: none;
+    }
+    .navItems .hideMenu {
+        display: block;
+    }
+}
