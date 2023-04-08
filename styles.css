@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--secondary-color);
+  background-image: url(./img/bg.png);
 }
 
 #home {
@@ -108,7 +109,6 @@ a {
 span {
   color: var(--primary-color);
 }
-
 
 /*------------------------------------------------------MEDIA QUERY------------------------------------------------*/
 
