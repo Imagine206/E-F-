@@ -20,11 +20,16 @@ body {
 }
 
 #home {
-  height: 200vh;
+  height: ;
+}
+
+svg{
+    fill: white;
 }
 
 /*------------------------------------------THIS IS THE NAVIGATION MENU---------------------------------------------------------------*/
 .navMenuContainer {
+    width: 100%;
 }
 .navListItems {
   display: flex;
@@ -34,6 +39,7 @@ body {
   border-radius: 50px;
   background-color: var(--secondary-color);
   width: 100%;
+  align-items: center;
 }
 .navListItems a {
   color: white;
@@ -44,13 +50,7 @@ body {
   text-decoration: none;
   transition: ease-out 500ms;
 }
-.navHomePage li,
-a {
-  list-style: none;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
+
 .navItems {
   display: flex;
 }
