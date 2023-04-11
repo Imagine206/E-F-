@@ -70,6 +70,7 @@ svg{
   border-radius: 25px;
   border: 1.5px solid var(--primary-color);
   transition: ease-out 500ms;
+  color: black;
 }
 .navItems a:hover,
 .hideMenu:hover {
