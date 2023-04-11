@@ -22,3 +22,5 @@ darkModeBtn.addEventListener('click', () => {
         link.style.color = isDarkMode ? 'white' : 'black';
     })
 })
+
+
