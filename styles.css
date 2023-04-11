@@ -15,8 +15,9 @@
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: white;
   background-image: url(./img/bg.png);
+  height: 200vh;
 }
 
 /* #home {
@@ -30,6 +31,7 @@ svg{
 /*------------------------------------------THIS IS THE NAVIGATION MENU---------------------------------------------------------------*/
 .navMenuContainer {
     width: 100%;
+    
 }
 .navListItems {
   display: flex;
@@ -37,11 +39,10 @@ svg{
   padding: 1rem;
   margin: 0.5rem 0 1rem 0;
   border-radius: 50px;
-  background-color: var(--secondary-color);
   width: 100%;
   align-items: center;
 }
-.navListItems a {
+.navItems a {
   color: white;
   border: 1.5px solid var(--primary-color);
   padding: var(--padding);
@@ -71,7 +72,6 @@ svg{
   transition: ease-out 500ms;
 }
 .navItems a:hover,
-.navListItems a:hover,
 .hideMenu:hover {
   background-color: var(--primary-color);
   transition: ease-in 500ms;
@@ -79,8 +79,28 @@ svg{
 .hideMenu {
   color: white;
 }
+
+/* DARK/LIGHT MODE */
+#dark-light-icon{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 2rem;
+    left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+body.dark-mode{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* DARK/LIGHT MODE END */
 /*--------------------------------------------END OF NAVIGATION MENU--------------------------------------------------------------*/
-.main-containier {
+.main-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
