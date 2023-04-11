@@ -140,4 +140,7 @@ span {
   .navItems .hideMenu {
     display: block;
   }
+  .h1-content{
+    font-size: 30px;
+  }
 }
