@@ -1,24 +1,21 @@
 const darkModeBtn = document.getElementById('dark-mode');
-const icon = document.getElementById("dark-light-icon");
-
+const iconLight = document.getElementById("dark-light-icon-light");
+const iconDark = document.getElementById("dark-light-icon-dark");
 
 darkModeBtn.addEventListener('click', () => {
-    icon.classList.remove();
-    const body = document.querySelector('body');
-    const isDarkMode = body.classList.toggle('dark-mode');
-    
+  const body = document.querySelector('body');
+  const isDarkMode = body.classList.toggle('dark-mode');
 
-    if (isDarkMode){
-        icon.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+  if (isDarkMode) {
+    iconLight.style.display = 'none'; // Hide the light icon
+    iconDark.style.display = 'inline-block'; // Show the dark icon
+  } else {
+    iconLight.style.display = 'inline-block'; // Show the light icon
+    iconDark.style.display = 'none'; // Hide the dark icon
+  }
 
-    }else {
-        icon.innerHTML = `<i class="fa-solid fa-lightbulb"></i>`;
-    }
-
-    icon.toggleAttribute('hidden', isDarkMode)
-
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        link.style.color = isDarkMode ? 'white' : 'black';
-    })
-})
+  const links = document.querySelectorAll('a');
+  links.forEach(link => {
+    link.style.color = isDarkMode ? 'white' : 'black';
+  });
+});
