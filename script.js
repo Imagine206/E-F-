@@ -2,7 +2,8 @@ const darkModeBtn = document.getElementById('dark-mode');
 const iconLight = document.getElementById("dark-light-icon-light");
 const iconDark = document.getElementById("dark-light-icon-dark");
 
-darkModeBtn.addEventListener('click', () => {
+darkModeBtn.addEventListener('click', (e) => {
+
   const body = document.querySelector('body');
   const isDarkMode = body.classList.toggle('dark-mode');
 
