@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--secondary-color);
   color: white;
   background-image: url(./img/bg.png);
   height: 200vh;
@@ -71,7 +71,7 @@ svg {
   border-radius: 25px;
   border: 1.5px solid var(--primary-color);
   transition: ease-out 500ms;
-  color: black;
+  color: ;
 }
 .navItems a:hover,
 .hideMenu:hover {
@@ -89,14 +89,14 @@ svg {
   border: 1px solid var(--primary-color);
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
-  color: black;
+  color: white;
 }
 .homeBtn li {
   list-style: none;
 }
 
 /* DARK/LIGHT MODE */
-#dark-mode {
+/* #dark-mode {
   width: 40px;
   height: 40px;
   position: fixed;
@@ -117,7 +117,7 @@ body.dark-mode {
   background-color: var(--secondary-color);
   color: white;
   transition: ease-in-out 500ms;
-}
+} */
 
 /* DARK/LIGHT MODE END */
 /*--------------------------------------------END OF NAVIGATION MENU--------------------------------------------------------------*/
@@ -159,7 +159,7 @@ span {
   color: white;
 }
 .contactButton {
-  background: var(--primary-color);
+  background: transparent;
   color: white;
   font-family: inherit;
   padding: 0.45em;
@@ -167,11 +167,10 @@ span {
   font-size: 17px;
   font-weight: 500;
   border-radius: 0.9em;
-  border: none;
+  border: 1px solid var(--primary-color);
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em var(--primary-color);
   overflow: hidden;
   position: relative;
   height: 2.8em;
@@ -193,8 +192,7 @@ span {
 }
 
 .contactButton:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em var(--primary-color);
+  transition: transform ease-in-out 500ms;
 }
 
 .contactButton:active {
