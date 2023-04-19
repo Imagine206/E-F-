@@ -20,3 +20,17 @@
 //     link.style.color = isDarkMode ? "white" : "black"
 //   })
 // })
+
+const contact = document.querySelector(".contact")
+const model = document.querySelector(".container")
+const closeContact = document.getElementById("abdul")
+
+contact.addEventListener("click", (e) => {
+  model.style.display = "block"
+})
+
+model.addEventListener("click", contact)
+
+closeContact.addEventListener("click", (e) => {
+  model.style.display = "none"
+})

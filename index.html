@@ -72,7 +72,7 @@
               <li><a href="#">Schedule</a></li>
               <li><a href="#">Teams</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="contact">Contact</a></li>
             </ul>
             <img src="" alt="" />
             <li class="hideMenu">Menu</li>
@@ -98,11 +98,13 @@
         <div class="main-container">
           <div class="h1-content">
             <h1 class="h1-hero">Winners Don't <span> Wait</span></h1>
-            <p>
-              Season 5 is HERE!!
-            </p>
+            <p>Season 5 is HERE!!</p>
             <button class="contactButton">
-              <a href="https://docs.google.com/forms/d/1yeZWDv2NzeW4NbLdyGlv53CkumR3LPVDQu8PzxoJmVU/viewform?edit_requested=true" target="_blank">register</a> 
+              <a
+                href="https://docs.google.com/forms/d/1yeZWDv2NzeW4NbLdyGlv53CkumR3LPVDQu8PzxoJmVU/viewform?edit_requested=true"
+                target="_blank"
+                >register</a
+              >
               <div class="iconButton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,6 +132,73 @@
       </section>
     </main>
     <!------------------------------------------------------END OF HERO SECTION------------------------------------------------>
+
+    <!------------------------------------------------------i am just trying to make the contacet from real quick------------------------------------------------>
+
+    <div class="container">
+      <form id="contact" action="" method="post">
+        <h3>Colorlib Contact Form</h3>
+        <h4>Contact us for custom quote</h4>
+        <fieldset>
+          <input
+            placeholder="Your name"
+            type="text"
+            tabindex="1"
+            required
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Email Address"
+            type="email"
+            tabindex="2"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Phone Number (optional)"
+            type="tel"
+            tabindex="3"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Web Site (optional)"
+            type="url"
+            tabindex="4"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Type your message here...."
+            tabindex="5"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+          >
+            Submit
+          </button>
+          <button
+            name="submit"
+            type="submit"
+            id="abdul"
+            data-submit="...Sending"
+          >
+            close
+          </button>
+        </fieldset>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
