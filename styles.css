@@ -154,7 +154,7 @@ body.dark-mode {
 span {
   color: var(--primary-color);
 }
-.contactButton a{
+.contactButton a {
   text-decoration: none;
   color: white;
 }
