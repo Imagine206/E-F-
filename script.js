@@ -23,7 +23,7 @@
 
 const contact = document.querySelector(".contact")
 const model = document.querySelector(".container")
-const closeContact = document.getElementById("abdul")
+const closeContact = document.getElementById("close")
 
 contact.addEventListener("click", (e) => {
   model.style.display = "block"
@@ -31,6 +31,7 @@ contact.addEventListener("click", (e) => {
 
 model.addEventListener("click", contact)
 
-closeContact.addEventListener("click", (e) => {
-  model.style.display = "none"
+closeContact.addEventListener('click', ()=>{
+     model.style.display = "none"
 })
+

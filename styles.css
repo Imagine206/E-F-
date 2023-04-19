@@ -301,7 +301,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: #43a047;
+  background: var(--secondary-color);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -342,4 +342,11 @@ fieldset {
   position: absolute;
   top: 0;
   left: 40%;
+  
 }
+
+#contact{
+ background: transparent;
+  border-radius: 10px;
+}
+
