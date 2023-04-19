@@ -16,22 +16,23 @@
 
 body {
   background-color: white;
+  color: white;
   background-image: url(./img/bg.png);
   height: 200vh;
+  transition: ease-in-out 1s;
 }
 
 /* #home {
   height: ;
 } */
 
-svg{
-    fill: white;
+svg {
+  fill: white;
 }
 
 /*------------------------------------------THIS IS THE NAVIGATION MENU---------------------------------------------------------------*/
 .navMenuContainer {
-    width: 100%;
-    
+  width: 100%;
 }
 .navListItems {
   display: flex;
@@ -77,46 +78,46 @@ svg{
   background-color: var(--primary-color);
   transition: ease-in 500ms;
 }
-.hideMenu {
-  color: white;
+
+.homeBtn {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
 }
-.homeBtn{
-    position: fixed;
-    bottom: 3rem;
-    right: 2rem;
+.homeBtn a {
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  color: black;
 }
-.homeBtn a{
-    text-decoration: none;
-    border: 1px solid var(--primary-color);
-    padding: .5rem 1.5rem;
-    border-radius: 5px;
-    color: black;
-}
-.homeBtn li{
-    list-style: none;
-    
+.homeBtn li {
+  list-style: none;
 }
 
 /* DARK/LIGHT MODE */
-#dark-mode{
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 2rem;
-    left: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 2rem;
-    display: flex;
-    gap: 1rem;
+#dark-mode {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
 }
-body.dark-mode{
-    background-color: var(--secondary-color);
-    color: white;
-    transition: ease-in-out 500ms;
+.hideMenu.dark-mode {
+  color: black;
 }
 
+body.dark-mode {
+  background-color: var(--secondary-color);
+  color: white;
+  transition: ease-in-out 500ms;
+}
 
 /* DARK/LIGHT MODE END */
 /*--------------------------------------------END OF NAVIGATION MENU--------------------------------------------------------------*/
@@ -134,22 +135,79 @@ body.dark-mode{
   margin: 2rem;
 }
 .h1-content {
-  display: flex;
-  justify-content: baseline;
+  /* display: flex;
   align-items: center;
-  padding: 5rem 5rem;
-  font-size: 50px;
+  padding:0 3rem  ;
   font-weight: 800;
   text-transform: capitalize;
   color: black;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+  color: transparent; */
+}
+
+.h1-content {
+  padding: 15rem 3rem;
+  gap: 2rem;
+}
+.h1-hero {
+  font-size: 4rem;
   -webkit-text-stroke: 1px hsl(180, 4%, 98%);
   color: transparent;
+  text-transform: capitalize;
 }
+
+.contactButton {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
 span {
   color: var(--primary-color);
 }
 
+.contactButton {
+  background: var(--primary-color);
+  color: white;
+  font-family: inherit;
+  padding: 0.45em;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--primary-color);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3em;
+}
+
+.iconButton {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--primary-color);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.contactButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em var(--primary-color);
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em var(--primary-color);
+}
 /*------------------------------------------------------MEDIA QUERY------------------------------------------------*/
 
 @media (max-width: 750px) {
@@ -159,7 +217,10 @@ span {
   .navItems .hideMenu {
     display: block;
   }
-  .h1-content{
+  .h1-content {
     font-size: 42px;
+  }
+  .hero-img {
+    display: none;
   }
 }
