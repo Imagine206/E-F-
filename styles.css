@@ -213,6 +213,8 @@ span {
   }
 }
 
+/* --------------------------------------------------------------END OF MEDIA QUERY---------------------------------------------*/
+
 .container {
   max-width: 400px;
   width: 100%;
@@ -319,21 +321,14 @@ fieldset {
   border: 1px solid #aaa;
 }
 
-::-webkit-input-placeholder {
+
+:-moz-placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder{
   color: #888;
 }
 
-:-moz-placeholder {
-  color: #888;
-}
-
-::-moz-placeholder {
-  color: #888;
-}
-
-:-ms-input-placeholder {
-  color: #888;
-}
 
 .container {
   display: none;
@@ -344,7 +339,7 @@ fieldset {
 }
 
 #contact{
- background: transparent;
+  background: transparent;
   border-radius: 10px;
 }
 
